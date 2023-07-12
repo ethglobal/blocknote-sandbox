@@ -1,10 +1,9 @@
 // import logo from './logo.svg'
-import { DefaultBlockSchema } from "@blocknote/core";
 import "@blocknote/core/style.css";
 import { BlockNoteView, useBlockNote } from "@blocknote/react";
 
 function App() {
-  const editor = useBlockNote<DefaultBlockSchema>({
+  const editor = useBlockNote({
     onEditorContentChange: (editor) => {
       console.log(editor.topLevelBlocks);
     },
