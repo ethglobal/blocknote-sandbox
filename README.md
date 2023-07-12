@@ -1,3 +1,7 @@
 # blocknote-bug-test
-# blocknote-bug-test
-# blocknote-bug-test
+
+## Install deps
+`yarn`
+
+## Run Next app
+`yarn dev`
