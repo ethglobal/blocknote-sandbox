@@ -11,14 +11,6 @@ const moduleExports = {
   // Your existing module.exports
   staticPageGenerationTimeout: 120,
   reactStrictMode: true,
-  images: {
-    domains: [
-      "storage.googleapis.com",
-      "imgur.com",
-      "i.imgur.com",
-      "pbs.twimg.com",
-    ],
-  },
   i18n,
   webpack(config) {
     config.module.rules.push({
