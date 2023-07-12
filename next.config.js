@@ -44,60 +44,6 @@ const moduleExports = {
       },
     ];
   },
-  async redirects() {
-    return [
-      {
-        source: "/careers",
-        destination: "https://jobs.lever.co/ETHGlobal",
-        permanent: true,
-      },
-      {
-        source: "/tokyo",
-        destination: "https://ethglobal.com/events/tokyo",
-        permanent: false,
-      },
-      {
-        source: "/taipei",
-        destination: "https://ethglobal.com/events/taipei-meetup",
-        permanent: false,
-      },
-      {
-        source: "/scaling",
-        destination: "https://ethglobal.com/events/scaling2023",
-        permanent: false,
-      },
-      {
-        source: "/lisbon",
-        destination: "https://ethglobal.com/events/lisbon",
-        permanent: false,
-      },
-      {
-        source: "/polygonzk",
-        destination: "https://ethglobal.com/events/polygon-zk-summit",
-        permanent: false,
-      },
-      {
-        source: "/autonomous",
-        destination: "https://ethglobal.com/events/autonomous",
-        permanent: false,
-      },
-      {
-        source: "/waterloo",
-        destination: "https://ethglobal.com/events/waterloo2023",
-        permanent: false,
-      },
-      {
-        source: "/paris",
-        destination: "https://ethglobal.com/events/paris2023",
-        permanent: false,
-      },
-      {
-        source: "/zk",
-        destination: "https://ethglobal.com/events/circuitbreaker",
-        permanent: false,
-      },
-    ];
-  },
 };
 
 const sentryWebpackPluginOptions = {
