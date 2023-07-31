@@ -6,7 +6,12 @@ const Editor = dynamic(() => import("../components/Editor"), {
 });
 
 function App() {
-  return <Editor></Editor>;
+  return (
+    <div>
+      <div style={{height: "300px", width: "100%", background: "black"}}>sdfidsjofsdjiofs</div>
+      <Editor></Editor>
+    </div>
+  );
 }
 
 export default App;
