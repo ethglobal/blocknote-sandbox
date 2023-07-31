@@ -1,17 +1,12 @@
 // import logo from './logo.svg'
-import { DefaultBlockSchema } from "@blocknote/core";
 import "@blocknote/core/style.css";
-import { BlockNoteView, useBlockNote } from "@blocknote/react";
+import dynamic from "next/dynamic";
+const Editor = dynamic(() => import("../components/Editor"), {
+  ssr: false,
+});
 
 function App() {
-  const editor = useBlockNote<DefaultBlockSchema>({
-    onEditorContentChange: (editor) => {
-      console.log(editor.topLevelBlocks);
-    },
-    theme: "light",
-  });
-
-  return <BlockNoteView editor={editor} />;
+  return <Editor></Editor>;
 }
 
 export default App;
